@@ -1,0 +1,27 @@
+# hi sir Jess output for nov. 13 yayyyyayyayayay
+# version 1 with simple input and output, no datetime library python function included :p
+
+
+# assign variables
+eTitleRaw = input("Enter event title: ")
+
+# input year month day
+def event_date():
+    enter_year = int(input("Enter year: "))
+    enter_month = int(input("Enter month: "))
+    enter_day = int(input("Enter day: "))
+    return enter_year, enter_month, enter_day
+
+# formatted output result
+def formatted_result(enter_year, enter_month, enter_day):
+    print("\nFormatted Output:")
+    print("Event:", eTitleRaw)
+    print("Date:", enter_month, enter_day, enter_year)
+    print("Year:", enter_year)
+    print("Month:", enter_month)
+    print("Day:", enter_day)
+    print("Weekday: ")
+
+# calling functions
+year, month, day = event_date()
+formatted_result(year, month, day)
