@@ -1,0 +1,45 @@
+# hi sir Jess output for nov. 13 yayyyyayyayayay
+# version 2 file fully functioning with datetime library actively formatting inputs cleanly
+
+
+# importing required libraries
+from datetime import datetime
+
+
+# function for inputting event title
+def event_title():
+    eTitleRaw = input("Enter event title: ")
+    
+    eventTitleFinal = eTitleRaw.upper()
+    return eventTitleFinal
+
+
+# function for datetime library
+def event_date():
+    enter_year = int(input("Enter year: "))
+    enter_month = int(input("Enter month: "))
+    enter_day = int(input("Enter day: "))
+    
+    eDateRaw = datetime(enter_year, enter_month, enter_day)
+    return eDateRaw
+
+
+# formatted output result
+def formatted_result():
+    title = event_title()
+    date_obj = event_date()
+    
+    print("\nFormatted Output:")
+    print(f"Event: {title}")
+    print(f"Date: {date_obj.strftime('%B')} {date_obj.day}, {date_obj.year}")
+    print(f"Year: {date_obj.year}")
+    print(f"Month: {date_obj.strftime('%B')}")
+    print(f"Day: {date_obj.day}")
+    print(f"Weekday: {date_obj.strftime('%A')}")
+
+
+# calling functions
+formatted_result()
+
+
+# plus points po? 😁
